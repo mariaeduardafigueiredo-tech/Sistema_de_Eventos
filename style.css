@@ -1,0 +1,246 @@
+body {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #d6d6d6;
+  }
+  h1{
+    font-size: 25px;
+  }
+  
+  header {
+    background-color: #6f00ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fiLL, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .evento {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Adicionado para alinhamento */
+    display: flex;
+    flex-direction: column;
+  }
+  .evento button {
+    margin-top: auto; /* Faz o botão descer para alinhar com o rodapé do card */
+  }
+  
+  .evento h2 {
+    margin: 0;
+  }
+  
+  .evento p {
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: #000000;    /* Cor de fundo verde */
+    color: white;                 /* Cor da fonte branca */
+    border: none;                 /* Sem borda */
+    padding: 10px;                /* Espaçamento interno */
+    width: 100%;                  /* Largura total do container */
+    border-radius: 5px;           /* Cantos arredondados */
+    cursor: pointer;             /* Muda o cursor ao passar */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    font-size: 14px;             /* Tamanho da fonte */
+    text-align: center;
+    margin-top: 20px;          /* Centraliza o texto */
+  }
+  
+  button:hover {
+    background-color: #4306d1;   /* Cor ao passar o mouse */
+  }
+  
+  
+  .container-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;     /* Centraliza horizontalmente */
+    gap: 30px;                   /* Espaço entre os cards */
+    padding: 20px 0;
+    font-size: 12px;
+  }
+  .button-onclick{
+     color: white;
+    border: none; 
+    padding: 10px;
+    width: 1000%; /* ou 100%, depende da largura do card */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto 0 auto; /* centraliza horizontalmente */
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+      }
+   
+    .evento {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;                /* Largura fixa */
+    box-sizing: border-box;
+  }
+
+  .carrossel-eventos {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  .evento-card {
+    min-width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  .evento-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 120px;
+  }
+  
+  .evento-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  /* .carrossel-eventos::-webkit-scrollbar {
+    display: none;
+  } */
+  .feedbacks {
+    padding: 40px 40px;
+    background-color: #d6d6d6;
+    text-align: center;
+  }
+  
+  .feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+  }
+  
+  .feedback-card {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-style: italic;
+  }
+  .feedback-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+  }
+  .cabecalho {
+    padding: 20px;
+    text-align: center;
+    background-color: #6200ea;
+  }
+  
+  #busca {
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px; /* Controle de espaço abaixo */
+  }
+
+  #botao-carrinho {
+  display: inline-block;
+  margin: 0; /* Remove espaço extra */
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: cell;
+}
+  
+  
+  .carrinho {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .carrinho.aberto {
+    right: 0;
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;         /* Alinha o texto do label à esquerda */
+    text-justify: inter-word; /* Justifica o texto (funciona melhor em blocos maiores) */
+  }
+  
+  .form-container input,
+  .form-container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: left;         /* Alinha o texto digitado à esquerda */
+  }
+  
+  .form-container {
+    text-align: justify;       /* Justifica o conteúdo do container */
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .form-container button:hover {
+    background-color: #370062;
+  }  
+  
